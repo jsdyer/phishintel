@@ -1,0 +1,68 @@
+{
+  "source": "https://www.cyber.gc.ca/en/guidance/defending-against-adversary-middle-threats-phishing-resistant-multi-factor-authentication-itsm30031",
+  "figure": "Figure 7",
+  "basis": "Cumulative percentage of observed results through each quarter",
+  "population": "Government of Canada and critical infrastructure partners in the Cyber Centre study",
+  "quarters": [
+    {
+      "period": "2023 Q1",
+      "otherBlock": 55.6,
+      "deviceBlock": 33.3,
+      "compromise": 11.1
+    },
+    {
+      "period": "2023 Q2",
+      "otherBlock": 55,
+      "deviceBlock": 35,
+      "compromise": 10
+    },
+    {
+      "period": "2023 Q3",
+      "otherBlock": 47.8,
+      "deviceBlock": 34.8,
+      "compromise": 17.4
+    },
+    {
+      "period": "2023 Q4",
+      "otherBlock": 50,
+      "deviceBlock": 33.3,
+      "compromise": 16.7
+    },
+    {
+      "period": "2024 Q1",
+      "otherBlock": 50,
+      "deviceBlock": 35.3,
+      "compromise": 14.7
+    },
+    {
+      "period": "2024 Q2",
+      "otherBlock": 51.2,
+      "deviceBlock": 34.9,
+      "compromise": 14
+    },
+    {
+      "period": "2024 Q3",
+      "otherBlock": 38.9,
+      "deviceBlock": 48.6,
+      "compromise": 12.5
+    },
+    {
+      "period": "2024 Q4",
+      "otherBlock": 38.4,
+      "deviceBlock": 51.5,
+      "compromise": 10.1
+    },
+    {
+      "period": "2025 Q1",
+      "otherBlock": 35.9,
+      "deviceBlock": 57,
+      "compromise": 7
+    },
+    {
+      "period": "2025 Q2",
+      "otherBlock": 35.9,
+      "deviceBlock": 58,
+      "compromise": 6.1
+    }
+  ]
+}

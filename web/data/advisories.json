@@ -1,0 +1,167 @@
+{
+  "reviewed": "2026-11-22",
+  "records": [
+    {
+      "id": "maple-2",
+      "date": "2026-11-09",
+      "dateLabel": "Published",
+      "title": "Maple Disruption 2.0",
+      "publisher": "Royal Canadian Mounted Police",
+      "type": "Operation results",
+      "topics": [
+        "Site disruption",
+        "Fraud reports"
+      ],
+      "summary": "Partners actioned 4,264 reports during the November operation. The release groups website removals and blocks with actions affecting phones, email and payments.",
+      "url": "https://www.rcmp.ca/en/news/2026/11/4358530"
+    },
+    {
+      "id": "help-desk",
+      "date": "2026-10-28",
+      "dateLabel": "Published",
+      "title": "Fake help-desk calls at legal and financial firms",
+      "publisher": "Canadian Centre for Cyber Security",
+      "type": "Campaign alert",
+      "topics": [
+        "Fake sign-in",
+        "MFA",
+        "Phone"
+      ],
+      "summary": "Callers posing as internal support directed staff to branded sign-in pages. The Cyber Centre observed frequent changes of lure domains and identified infrastructure naming Canadian organizations.",
+      "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-028-ongoing-help-desk-voice-phishing-campaign-targeting-canadian-organizations"
+    },
+    {
+      "id": "checkout",
+      "date": "2026-10-07",
+      "dateLabel": "Page updated",
+      "title": "Retailer lookalikes and fake checkouts",
+      "publisher": "Canadian Centre for Cyber Security",
+      "type": "Guidance",
+      "topics": [
+        "Checkout",
+        "Ads",
+        "Brand impersonation"
+      ],
+      "summary": "The shopping guide describes imitation stores and payment pages reached through ads, messages and QR codes. It gives shoppers checks for independently verifying a retailer.",
+      "url": "https://www.cyber.gc.ca/en/guidance/shopping-online-safely-itsap00071"
+    },
+    {
+      "id": "cra-takedown",
+      "date": "2026-10-01",
+      "dateLabel": "Published",
+      "title": "CRA describes its phishing-site removals",
+      "publisher": "Canada Revenue Agency",
+      "type": "Agency report",
+      "topics": [
+        "Site disruption",
+        "Brand impersonation"
+      ],
+      "summary": "The agency describes hundreds of phishing websites taken down annually. It gives the scale of the work without an exact year-by-year count.",
+      "url": "https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2026/protecting-taxpayer-information.html"
+    },
+    {
+      "id": "fcac",
+      "date": "2026-07-17",
+      "dateLabel": "Page date",
+      "title": "Websites posing as government grant providers",
+      "publisher": "Financial Consumer Agency of Canada",
+      "type": "Campaign alert",
+      "topics": [
+        "Brand impersonation",
+        "Financial services"
+      ],
+      "summary": "FCAC reports websites borrowing its identity to offer funding or grants. It explains how to recognize requests for personal information or upfront payments.",
+      "url": "https://www.canada.ca/en/financial-consumer-agency/corporate/alert-impersonation-employee.html"
+    },
+    {
+      "id": "tickets",
+      "date": "2026-04-13",
+      "dateLabel": "Page updated",
+      "title": "Impersonation in online ticket sales",
+      "publisher": "Competition Bureau Canada",
+      "type": "Guidance",
+      "topics": [
+        "Tickets",
+        "Ads",
+        "Checkout"
+      ],
+      "summary": "The Bureau describes fake sites, advertisements and social posts used to sell invalid tickets. It directs buyers to the venue for independent checks on an offer.",
+      "url": "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/protect-yourself-online-ticket-fraud"
+    },
+    {
+      "id": "officials",
+      "date": "2026-03-09",
+      "dateLabel": "Published",
+      "title": "Government impersonation through fake sites and messages",
+      "publisher": "Competition Bureau Canada",
+      "type": "Guidance",
+      "topics": [
+        "Brand impersonation",
+        "Text messages",
+        "Phone"
+      ],
+      "summary": "The Bureau describes false government websites and messages about programs or refunds. It also explains how fabricated audio and video can reinforce a false endorsement.",
+      "url": "https://www.canada.ca/en/competition-bureau/news/2026/03/watch-out-for-ai-generated-government-impersonators.html"
+    },
+    {
+      "id": "cafc-examples",
+      "date": "2026-01-16",
+      "dateLabel": "Page updated",
+      "title": "Phishing messages preserved by the Anti-Fraud Centre",
+      "publisher": "Canadian Anti-Fraud Centre",
+      "type": "Reported examples",
+      "topics": [
+        "Text messages",
+        "Brand impersonation",
+        "Financial services"
+      ],
+      "summary": "The Centre reproduces examples of parking-payment demands, benefit notices and licence-refund messages. The examples preserve the wording people encountered.",
+      "url": "https://antifraudcentre-centreantifraude.ca/scams-fraudes/phishing-hameconnage-eng.htm"
+    },
+    {
+      "id": "recognize",
+      "date": "2025-11-24",
+      "dateLabel": "Page updated",
+      "title": "How phishing arrives by message, call or QR code",
+      "publisher": "Canadian Centre for Cyber Security",
+      "type": "Guidance",
+      "topics": [
+        "Text messages",
+        "Phone",
+        "QR codes"
+      ],
+      "summary": "An overview of targeted email, text and voice impersonation explains which information is at risk and how organizations can prepare employees to recognize attempts.",
+      "url": "https://www.cyber.gc.ca/en/guidance/dont-take-bait-recognize-and-avoid-phishing-attacks"
+    },
+    {
+      "id": "study",
+      "date": "2025-10-30",
+      "dateLabel": "Page updated",
+      "title": "Cloud sign-in phishing in federal and partner organizations",
+      "publisher": "Canadian Centre for Cyber Security",
+      "type": "Measured study",
+      "topics": [
+        "Fake sign-in",
+        "MFA",
+        "Business email"
+      ],
+      "summary": "The Cyber Centre studied over 100 campaigns targeting Microsoft Entra ID accounts. Figure 7 breaks down cumulative results by two kinds of blocking and full session compromise.",
+      "url": "https://www.cyber.gc.ca/en/guidance/defending-against-adversary-middle-threats-phishing-resistant-multi-factor-authentication-itsm30031"
+    },
+    {
+      "id": "qr",
+      "date": "2024-03-15",
+      "dateLabel": "Page updated",
+      "title": "Fraud reports involving QR codes and fake payment notices",
+      "publisher": "Canadian Anti-Fraud Centre",
+      "type": "Reported examples",
+      "topics": [
+        "QR codes",
+        "Checkout",
+        "Financial services"
+      ],
+      "summary": "The Centre describes reports from marketplace sellers who received codes labelled as incoming payments. In some cases the code instead opened a request for money or banking details.",
+      "url": "https://antifraudcentre-centreantifraude.ca/features-vedette/2024/03/bulletin-4-eng.htm"
+    }
+  ]
+}

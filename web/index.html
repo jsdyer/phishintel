@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="referrer" content="no-referrer">
   <title>{{TITLE}} · CoolCode</title>
   <link rel="stylesheet" href="./style.css">
   <script type="module" src="./app.mjs"></script>
@@ -11,24 +12,44 @@
 </head>
 <body data-tool-id="{{TOOL_ID}}">
   <a class="skip" href="#main">Skip to content</a>
-  <header><a href="https://coolcode.ca/">← CoolCode.ca</a><a href="{{SOURCE_URL}}">Source &amp; instructions ↗</a></header>
+  <header><a class="brand" href="https://coolcode.ca/">CoolCode<span>.ca</span></a><nav aria-label="Related tools"><a href="https://coolcode.ca/fraudpulse/">FraudPulse</a><a href="https://coolcode.ca/atip/">ATIP</a><a href="{{SOURCE_URL}}">GitHub ↗</a></nav></header>
   <main id="main">
-    <p class="eyebrow">Browser tool starter</p>
-    <h1>{{TITLE}}</h1>
-    <p class="intro">{{DESCRIPTION}}</p>
-    <section aria-labelledby="example-title">
-      <h2 id="example-title">Clean a list</h2>
-      <p>Trim spaces, skip blank lines and remove exact duplicates. Capitalization stays distinct.</p>
-      <div class="panels">
-        <div><label for="input">Your lines</label><textarea id="input" rows="10" maxlength="100000" spellcheck="false" placeholder="Paste one item per line"></textarea></div>
-        <div><label for="output">Cleaned lines</label><textarea id="output" rows="10" readonly spellcheck="false"></textarea></div>
-      </div>
-      <div class="actions"><button id="sample" type="button">Load example</button><button id="clear" type="button">Clear</button><button id="copy" type="button" hidden>Copy result</button></div>
-      <p id="status" role="status" aria-live="polite">Paste a list to begin.</p>
-      <noscript><p>This tool needs JavaScript to process your text. The source is available above.</p></noscript>
+    <div class="mast">
+      <div class="intro"><p class="eyebrow">Security research / Canada</p><h1>{{TITLE}}</h1><p>{{DESCRIPTION}}</p><a class="jump" href="#index">Browse publications ↓</a></div>
+      <section class="study" aria-labelledby="study-title">
+        <div class="section-top"><span class="eyebrow">Cyber Centre study · Figure 7</span><a id="source-study" href="https://www.cyber.gc.ca/en/guidance/defending-against-adversary-middle-threats-phishing-resistant-multi-factor-authentication-itsm30031">Source ↗</a></div>
+        <h2 id="study-title">What happened at sign-in?</h2>
+        <p>Phishing results observed across federal and critical infrastructure partner accounts, accumulated through each quarter.</p>
+        <label for="metric">Outcome</label>
+        <select id="metric"><option value="compromise">Full session compromise</option><option value="deviceBlock">Blocked by a registered-device policy</option><option value="otherBlock">Blocked by MFA or another access policy</option></select>
+        <div id="chart" role="img" aria-label="Chart loading"></div>
+        <details><summary>Exact values and study coverage</summary>
+          <p>Each point includes earlier observations. The Cyber Centre supplies rounded percentages. The count underlying each quarter is unpublished in this figure.</p>
+          <div class="table-wrap"><table><caption>Cumulative share of observed results (%)</caption><thead><tr><th scope="col">Through</th><th scope="col">MFA / other policy</th><th scope="col">Registered-device policy</th><th scope="col">Full session compromise</th></tr></thead><tbody id="quarters"></tbody></table></div>
+          <button type="button" id="export-study" disabled>Download study CSV</button>
+        </details>
+      </section>
+    </div>
+    <section class="index" id="index" aria-labelledby="index-title">
+      <div class="index-head"><div><h2 id="index-title">Publication index</h2><p>Search selected Canadian warnings, reported examples and studies. Each entry represents one source publication.</p></div><button id="export-index" type="button" disabled>Export results ↓</button></div>
+      <form id="filters" role="search">
+        <div><label for="query">Search publications</label><input type="search" id="query" placeholder="Try ticket sales or MFA" maxlength="200" autocomplete="off"></div>
+        <div><label for="publisher">Publisher</label><select id="publisher"><option value="">All publishers</option></select></div>
+        <div><label for="type">Evidence type</label><select id="type"><option value="">All types</option></select></div>
+        <button id="reset" type="button">Reset</button>
+      </form>
+      <div class="countline"><span id="count" role="status">Loading publications…</span><span id="reviewed"></span></div>
+      <div id="records"></div>
     </section>
-    <aside aria-label="Privacy"><strong>Stays on your device.</strong> The browser processes your text in this tab. Reloading clears it.</aside>
+    <section class="gaps" aria-labelledby="gaps-title">
+      <h2 id="gaps-title">Questions the sources leave open</h2>
+      <article><h3>How many sign-ins underlie the percentages?</h3><p>Figure 7 ends at Q2 2025. An ATIP request to Communications Security Establishment Canada could ask for the existing aggregate counts behind its three categories and any later version of that same table.</p><a href="https://www.cyber.gc.ca/en/guidance/defending-against-adversary-middle-threats-phishing-resistant-multi-factor-authentication-itsm30031">Read Figure 7 ↗</a></article>
+      <article><h3>How quickly are CRA lookalikes removed?</h3><p>The CRA describes hundreds of removals a year. Its October 2026 release leaves the counting unit and elapsed time unspecified. Look for the aggregate records behind that statement, including any definition of a completed removal.</p><a href="https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2026/protecting-taxpayer-information.html">Read the CRA release ↗</a></article>
+      <article><h3>Which privacy breach records already exist?</h3><p>The Privacy Commissioner released a three-page spreadsheet covering reported PIPEDA breaches from April 1 to July 20, 2021, including phishing categories. Its unit is a breach reported to the Commissioner. The index entry identifies a completed release you can request.</p><a href="https://coolcode.ca/atip/#q=A-2021-00035&amp;institution=opc-cpvp&amp;year=2021&amp;record=opc-cpvp%2C2021%2C10%2CA-2021-00035">Find OPC release A-2021-00035 →</a></article>
+      <a href="https://coolcode.ca/atip/">Search previous ATIP releases →</a>
+    </section>
+    <noscript><p>Enable JavaScript for the chart and filters. Read the <a href="./data/advisories.json">publication index</a> and <a href="./data/outcomes.json">study values</a> directly.</p></noscript>
   </main>
-  <footer>Part of <a href="https://coolcode.ca/">the CoolCode collection</a>. {{ISSUE_LINK}}</footer>
+  <footer><nav aria-label="Investigative tools"><a href="https://coolcode.ca/registrarwatch/">RegistrarWatch</a><a href="https://coolcode.ca/scamtrace/">ScamTrace</a><a href="https://coolcode.ca/abusepulse/">AbusePulse</a></nav><span>Part of <a href="https://coolcode.ca/">CoolCode.ca</a></span><span>Filters stay in your browser. {{ISSUE_LINK}}</span></footer>
 </body>
 </html>
