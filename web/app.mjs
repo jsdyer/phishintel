@@ -74,7 +74,12 @@ function setupIndex(data) {
   publisher.addEventListener('change', apply);
   type.addEventListener('change', apply);
   byId('filters').addEventListener('submit', event => { event.preventDefault(); apply(); });
-  byId('reset').addEventListener('click', () => { byId('filters').reset(); apply(); });
+  byId('reset').addEventListener('click', () => {
+    query.value = '';
+    publisher.value = '';
+    type.value = '';
+    apply();
+  });
   window.addEventListener('hashchange', restore);
   byId('export-index').addEventListener('click', () => {
     const cols = ['title', 'publisher', 'date', 'dateLabel', 'type', 'topics', 'summary', 'url'];
